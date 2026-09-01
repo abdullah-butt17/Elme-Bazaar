@@ -201,7 +201,7 @@ function Contact() {
           <div className="rounded-[2rem] overflow-hidden border border-border aspect-[4/3] bg-[color:var(--cream)] relative">
             <iframe
               title="ELME Bazaar location"
-              src="https://www.google.com/maps?q=AA%20Block%20City%20Housing%20Scheme%20Gujranwala&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d211.1383724978651!2d74.16296046700589!3d32.144524181838555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDA4JzQwLjAiTiA3NMKwMDknNDYuOCJF!5e0!3m2!1sen!2s!4v1788261601335!5m2!1sen!2s"
               className="w-full h-full grayscale"
               loading="lazy"
             />
