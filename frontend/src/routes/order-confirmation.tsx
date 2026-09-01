@@ -1,0 +1,5 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { FiCheck } from "react-icons/fi";
+
+export const Route = createFileRoute("/order-confirmation")({ component: Confirmation, head: () => ({ meta: [{ title: "Order Confirmed — ELME Bazaar" }] }) });
+function Confirmation() { const { id } = Route.useSearch() as { id?: string }; return <div className="container-luxe py-24 text-center"><div className="mx-auto flex h-16 w-16 items-center justify-center border border-[color:var(--ink)]"><FiCheck className="h-7 w-7" /></div><p className="eyebrow mt-8">Thank you</p><h1 className="mt-2 text-4xl font-display">Your order is confirmed</h1><p className="mx-auto mt-4 max-w-md text-sm text-[color:var(--ink-soft)]">We have received your order and will contact you shortly to arrange delivery.</p>{id && <p className="mt-4 text-xs text-[color:var(--ink-soft)]">Short order reference: <strong>{id}</strong></p>}<Link to="/shop" className="btn-primary mt-8">Continue Shopping</Link></div>; }
